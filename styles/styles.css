@@ -1,149 +1,142 @@
-@import "https://fonts.googleapis.com/css?family=Roboto";
-
+@import url('https://fonts.googleapis.com/css?family=Roboto;');
+@font-face {
+	font-family:"Flaticon";
+	src:url(./Flaticon.eot);
+	font-weight:400;
+	font-style:normal
+}
 * {
-padding:0;
-margin:0;
-box-sizing:border-box;
-font-family:'Roboto',sans-serif
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family:'Roboto',sans-serif
 }
-
 body {
-background-color:#F7F9FA
+	padding:0 10px;
+	background-color:#F7F9FA
 }
-
 #main-wrapper {
-width:1000px;
-margin:auto
+	width:1000px;
+	margin:auto
 }
-
 #header {
-margin:10px 0;
-font-weight:700;
-color:#4C5151
+	margin:10px 0;
+	font-weight:700;
+	color:#4C5151
 }
-
 #content {
-margin-bottom:100px
+	margin-bottom:100px
 }
-
 table {
-border-collapse:collapse;
-border-right:1px solid #D2D4D5;
-border-top:1px solid #D2D4D5;
-border-left:1px solid #D2D4D5
+	border-collapse:collapse;
+	border-right:1px solid #D2D4D5;
+	border-top:1px solid #D2D4D5;
+	border-left:1px solid #D2D4D5
 }
-
 th {
-height:30px;
-background-color:#ECF0F3;
-color:#4C5151;
-text-align:right;
-padding-right:10px;
-width:200px;
-height:30px;
-font-weight:500
+	height:30px;
+	background-color:#ECF0F3;
+	color:#4C5151;
+	text-align:right;
+	padding-right:10px;
+	width:200px;
+	height:30px;
+	font-weight:500
 }
-
-tr:nth-child(odd) {
-background-color:#FBFBFB
+tr:nth-child(even) {
+	background-color:#FBFBFB
 }
-
 td,th {
-overflow:hidden;
-border-bottom:1px solid #D2D4D5
+	border-bottom:1px solid #D2D4D5
 }
-
 .person-info {
-margin:10px;
-width:400px;
-height:60px
+	margin:10px;
+	width:400px;
+	height:60px
 }
-
 .photo {
-float:left
+	float:left;
+	margin-right:10px
 }
-
-.photo,.photo img {
-height:60px;
-width:60px
+.photo img {
+	height:60px;
+	width:60px
 }
-
-.info {
-height:60px;
-float:left;
-margin-left:20px;
-font-size:14px
-}
-
-.name-follow,.data {
-line-height:25px;
-height:50%;
-vertical-align:center
-}
-
-.data {
-color:#4C5151
-}
-
-.name {
-color:#2C76C7;
-font-weight:700;
-font-size:1.1em;
-font-family:'Roboto',sans-serif
-}
-
-.users-amount {
-font-size:18px;
-font-weight:600;
-color:#4C5151
-}
-
 .cell-data {
-text-align:right;
-padding-right:10px;
-font-weight:600;
-color:#4C5151
+	text-align:right;
+	padding-right:10px;
+	font-weight:600;
+	color:#4C5151
 }
-
-.plus-wrapper,.users-icon {
-color:#B6B6B6
-}
-
-.follow,.unfollow,.v-wrapper {
-display:none
-}
-
-.follow,.unfollow {
-border-radius:20px;
-padding:0 8px;
-color:#fff;
-border:0
-}
-
-.v-wrapper i {
-color:#A4C574
-}
-
-.follow {
-background-color:#A4C574
-}
-
-.unfollow {
-background-color:#f08080
-}
-
 #show-more {
-border:1px solid #D2D4D5;
-border-top:1px dashed #D2D4D5;
-width:200px;
-margin:-1px auto 0;
-background-color:RGBA(254,254,254,1);
-text-align:center;
-padding:5px;
-font-size:12px;
-font-weight:600;
-color:#4C5151
+	border:1px solid #D2D4D5;
+	border-top:1px dashed #D2D4D5;
+	width:200px;
+	margin:-1px auto 0;
+	background-color:#fff;
+	text-align:center;
+	padding:5px;
+	font-size:12px;
+	font-weight:600;
+	color:#4C5151
 }
-/*  I found several ways to show the dashed top border of 'show-more' button and hide correspondning part of the table bottom border, but some of them which I tried were not worked...
-*/
-
+.follow-checkbox {
+	display:none
+}
+.follow-checkbox + label {
+	cursor:pointer;
+	margin-left:5px
+}
+.follow-checkbox + label::after {
+    content:"\f102";
+	font-family:Flaticon;
+	font-size:20px;
+	color:#b6b6b6;
+	display:inline-block;
+	line-height:20px;
+	vertical-align:middle;
+	border-radius:100%;
+	background:transparent
+}
+.follow-checkbox + label:hover::after {
+	content:'Follow';
+    font-family:'Roboto',sans-serif;
+	font-weight: 400;
+    font-size:14px;
+    color:#fff;
+	background:#a4c574;
+	padding:0 10px;
+	border-radius:10px
+}
+.follow-checkbox:checked + label::after {
+	content:'\f103';
+	color:#a4c574
+}
+.follow-checkbox:checked + label:hover::after {
+	content:'Unfollow';
+	background:#ff4b3a;
+	color:#fff
+}
+.rating,.name-wrapper {
+	margin-left:20px;
+    height:50%;
+	line-height:27px;
+}
+.rating{
+	color:#4C5151;
+	font-weight:600 
+}
+.name-follow {
+	margin-left:20px
+}
+.name {
+	color:#2C76C7;
+	font-weight:700;
+	font-size:15px
+}
+.rating::before{
+	font-family:Flaticon;
+	font-size:20px;
+	content:"\f101";
+	color:#b6b6b6
+}
