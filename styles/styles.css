@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto;');
 @font-face {
 	font-family:"Flaticon";
-	src:url(./Flaticon.eot);
+	src:url(./Flaticon.woff);
 	font-weight:400;
 	font-style:normal
 }
@@ -9,11 +9,11 @@
 	padding:0;
 	margin:0;
 	box-sizing:border-box;
-	font-family:'Roboto',sans-serif
 }
 body {
 	padding:0 10px;
-	background-color:#F7F9FA
+    background-color:#F7F9FA;
+    font-family:'Roboto',sans-serif;
 }
 #main-wrapper {
 	width:1000px;
@@ -23,6 +23,17 @@ body {
 	margin:10px 0;
 	font-weight:700;
 	color:#4C5151
+}
+#header span::before{
+    content:"\f100";
+	font-family:Flaticon;
+	font-size:23px;
+	color:#4C5151;
+    font-weight: 400;
+    line-height: 25px;
+    vertical-align:middle;
+	background:transparent;
+	margin-right: 5px
 }
 #content {
 	margin-bottom:100px
@@ -80,6 +91,9 @@ td,th {
 	font-weight:600;
 	color:#4C5151
 }
+#show-more span, #header span{
+    text-transform: uppercase;
+}
 .follow-checkbox {
 	display:none
 }
@@ -113,6 +127,7 @@ td,th {
 	color:#a4c574
 }
 .follow-checkbox:checked + label:hover::after {
+    font-family:'Roboto',sans-serif;
 	content:'Unfollow';
 	background:#ff4b3a;
 	color:#fff
@@ -140,3 +155,4 @@ td,th {
 	content:"\f101";
 	color:#b6b6b6
 }
+
