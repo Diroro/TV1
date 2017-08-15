@@ -2,17 +2,17 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>People</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 
 <body>
-    <div id="main-wrapper">
-        <div id="header">
-            <span>People</span>
-        </div>
-        <div id="content">
-            <table id="table">
+    <header class="header"></header>
+    <section id="person">
+        <div id="person__wrapper">
+            <table id="person__table">
+                <caption><span id="person__header">People</span></caption>
                 <th>
                 </th>
                 <th>
@@ -25,270 +25,179 @@
                     Followers
                 </th>
                 <tbody>
-                    <tr class="person">
-                        <td>
-                            <div class="person-info">
-                                <div class="photo">
-                                    <img src="img/tirion.jpeg" alt="Tirion">
-                                </div>
-                                <div class="name-follow">
-                                    <div class="name-wrapper">
-                                        <span class='name'>Tirion Lannister</span>
-                                        <input type="checkbox" class='follow-checkbox' id="tirion">
-                                        <label for="tirion"></label>
-                                    </div>
-                                    <div class='rating'> 1457</div>
-                                </div>
-                            </div>
+                    <tr class="person__item">
+                        <td class="person__info">
+                            <img class="person__photo" src="img/tirion.jpeg" alt="Tirion">
+                            <span class="person__name">Tirion Lannister</span>
+                            <input class="person__follow-checkbox" type="checkbox" id="tirion">
+                            <label for="tirion"></label>
+                            <div class="person__rating"> 1457</div>
                         </td>
-                        <td class="cell-data">53
+                        <td class="person__data">53
                         </td>
-                        <td class="cell-data">6
+                        <td class="person__data">6
                         </td>
-                        <td class="cell-data">1220
+                        <td class="person__data">1220
                         </td>
                     </tr>
-                    <tr class="person">
-                        <td>
-                            <div class="person-info">
-                                <div class="photo">
-                                    <img src="img/brienne.jpeg" alt="Brienne">
-                                </div>
-                                <div class="name-follow">
-                                    <div class="name-wrapper">
-                                        <span class='name'>Brienne of Tarth</span>
-                                        <input type="checkbox" class='follow-checkbox' id="brienne">
-                                        <label for="brienne"></label>
-                                    </div>
-                                    <div class='rating'> 528</div>
-                                </div>
-                            </div>
-
+                    <tr class="person__item">
+                        <td class="person__info">
+                            <img class="person__photo" src="img/brienne.jpeg" alt="Brienne">
+                            <span class="person__name">Brienne of Tarth</span>
+                            <input type="checkbox" class="person__follow-checkbox" id="brienne">
+                            <label for="brienne"></label>
+                            <div class="person__rating"> 528</div>
                         </td>
-                        <td class="cell-data">12
+                        <td class="person__data">12
                         </td>
-                        <td class="cell-data">20
+                        <td class="person__data">20
                         </td>
-                        <td class="cell-data">253
+                        <td class="person__data">253
                         </td>
                     </tr>
-                    <tr class="person">
-                        <td>
-                            <div class="person-info">
-                                <div class="photo">
-                                    <img src="img/arya.jpeg" alt="Arya">
-                                </div>
-                                <div class="name-follow">
-                                    <div class="name-wrapper">
-                                        <span class='name'>Arya Stark</span>
-                                        <input type="checkbox" class='follow-checkbox' id="arya">
-                                        <label for="arya"></label>
-                                    </div>
-                                    <div class='rating'> 970</div>
-                                </div>
-                            </div>
+                    <tr class="person__item">
+                        <td class="person__info">
+                            <img class="person__photo" src="img/arya.jpeg" alt="Arya">
+                            <span class="person__name">Arya Stark</span>
+                            <input type="checkbox" class="person__follow-checkbox" id="arya">
+                            <label for="arya"></label>
+                            <div class="person__rating"> 970</div>
                         </td>
-                        <td class="cell-data">38
+                        <td class="person__data">38
                         </td>
-                        <td class="cell-data">70
+                        <td class="person__data">70
                         </td>
-                        <td class="cell-data">970
+                        <td class="person__data">970
                         </td>
                     </tr>
-                    <tr class="person">
-                        <td>
-                            <div class="person-info">
-                                <div class="photo">
-                                    <img src="img/Daenerys.jpeg" alt="Daenerys">
-                                </div>
-                                <div class="name-follow">
-                                    <div class="name-wrapper">
-                                        <span class='name'>Daenerys Targarien</span>
-                                        <input type="checkbox" class='follow-checkbox' id="daenerys">
-                                        <label for="daenerys"></label>
-                                    </div>
-                                    <div class='rating'> 970</div>
-                                </div>
-                            </div>
+                    <tr class="person__item">
+                        <td class="person__info">
+                            <img class="person__photo" src="img/Daenerys.jpeg" alt="Daenerys">
+                            <span class="person__name">Daenerys Targarien</span>
+                            <input type="checkbox" class="person__follow-checkbox" id="daenerys">
+                            <label for="daenerys"></label>
+                            <div class="person__rating"> 970</div>
                         </td>
-                        <td class="cell-data">58
+                        <td class="person__data">58
                         </td>
-                        <td class="cell-data">21
+                        <td class="person__data">21
                         </td>
-                        <td class="cell-data">1032
+                        <td class="person__data">1032
                         </td>
                     </tr>
-                    <tr class="person">
-                        <td>
-                            <div class="person-info">
-                                <div class="photo">
-                                    <img src="img/hodor.jpeg" alt="Hodor Hodor">
-                                </div>
-
-                                <div class="name-follow">
-                                    <div class="name-wrapper">
-                                        <span class='name'>Hodor</span>
-                                        <input type="checkbox" class='follow-checkbox' id="hodor">
-                                        <label for="hodor"></label>
-                                    </div>
-                                    <div class='rating'> 1702</div>
-                                </div>
-                            </div>
+                    <tr class="person__item">
+                        <td class="person__info">
+                            <img class="person__photo" src="img/hodor.jpeg" alt="Hodor Hodor">
+                            <span class="person__name">Hodor</span>
+                            <input type="checkbox" class="person__follow-checkbox" id="hodor">
+                            <label for="hodor"></label>
+                            <div class="person__rating"> 1702</div>
                         </td>
-                        <td class="cell-data">1
+                        <td class="person__data">1
                         </td>
-                        <td class="cell-data">56
+                        <td class="person__data">56
                         </td>
-                        <td class="cell-data">1702
+                        <td class="person__data">1702
                         </td>
                     </tr>
-                    <tr class="person">
-                        <td>
-                            <div class="person-info">
-                                <div class="photo">
-                                    <img src="img/John.jpeg" alt="You know nothing">
-                                </div>
-                                <div class="name-follow">
-                                    <div class="name-wrapper">
-                                        <span class='name'>John Show</span>
-                                        <input type="checkbox" class='follow-checkbox' id="john">
-                                        <label for="john"></label>
-                                    </div>
-                                    <div class='rating'> 1090</div>
-                                </div>
-                            </div>
+                    <tr class="person__item">
+                        <td class="person__info">
+                            <img class="person__photo" src="img/John.jpeg" alt="You know nothing">
+                            <span class="person__name">John Show</span>
+                            <input type="checkbox" class="person__follow-checkbox" id="john">
+                            <label for="john"></label>
+                            <div class="person__rating"> 1090</div>
                         </td>
-                        <td class="cell-data">20
+                        <td class="person__data">20
                         </td>
-                        <td class="cell-data">39
+                        <td class="person__data">39
                         </td>
-                        <td class="cell-data">1090
+                        <td class="person__data">1090
                         </td>
                     </tr>
-                    <tr class="person">
-                        <td>
-                            <div class="person-info">
-                                <div class="photo">
-                                    <img src="img/melissandra.jpeg" alt="The priestess of fire">
-                                </div>
-                                <div class="name-follow">
-                                    <div class="name-wrapper">
-                                        <span class='name'>Melissandra</span>
-                                        <input type="checkbox" class='follow-checkbox' id="melissandra">
-                                        <label for="melissandra"></label>
-                                    </div>
-                                    <div class='rating'> 431</div>
-                                </div>
-                            </div>
+                    <tr class="person__item">
+                        <td class="person__info">
+                            <img class="person__photo" src="img/melissandra.jpeg" alt="The priestess of fire">
+                            <span class="person__name">Melissandra</span>
+                            <input type="checkbox" class="person__follow-checkbox" id="melissandra">
+                            <label for="melissandra"></label>
+                            <div class="person__rating"> 431</div>
                         </td>
-                        <td class="cell-data">1
+                        <td class="person__data">1
                         </td>
-                        <td class="cell-data">125
+                        <td class="person__data">125
                         </td>
-                        <td class="cell-data">431
+                        <td class="person__data">431
                         </td>
                     </tr>
-                    <tr class="person">
-                        <td>
-                            <div class="person-info">
-                                <div class="photo">
-                                    <img src="img/Petir.jpeg" alt="Petir">
-                                </div>
-
-                                <div class="name-follow">
-                                    <div class="name-wrapper">
-                                        <span class='name'>Petyr Baelish</span>
-                                        <input type="checkbox" class='follow-checkbox' id="petyr">
-                                        <label for="petyr"></label>
-                                    </div>
-                                    <div class='rating'> 214</div>
-                                </div>
-                            </div>
+                    <tr class="person__item">
+                        <td class="person__info">
+                            <img class="person__photo" src="img/Petir.jpeg" alt="Petir">
+                            <span class="person__name">Petyr Baelish</span>
+                            <input type="checkbox" class="person__follow-checkbox" id="petyr">
+                            <label for="petyr"></label>
+                            <div class="person__rating"> 214</div>
                         </td>
-                        <td class="cell-data">205
+                        <td class="person__data">205
                         </td>
-                        <td class="cell-data">369
+                        <td class="person__data">369
                         </td>
-                        <td class="cell-data">214
+                        <td class="person__data">214
                         </td>
                     </tr>
-                    <tr class="person">
-                        <td>
-                            <div class="person-info">
-                                <div class="photo">
-                                    <img src="img/ramsey.jpeg" alt="Ramsay">
-                                </div>
-                                <div class="name-follow">
-                                    <div class="name-wrapper">
-                                        <span class='name'>Ramsay Bolton</span>
-                                        <input type="checkbox" class='follow-checkbox' id="ramsey">
-                                        <label for="ramsey"></label>
-                                    </div>
-                                    <div class='rating'> 970</div>
-                                </div>
-
-                            </div>
+                    <tr class="person__item">
+                        <td class="person__info">
+                            <img class="person__photo" src="img/ramsey.jpeg" alt="Ramsay">
+                            <span class="person__name">Ramsay Bolton</span>
+                            <input type="checkbox" class="person__follow-checkbox" id="ramsey">
+                            <label for="ramsey"></label>
+                            <div class="person__rating"> 970</div>
                         </td>
-                        <td class="cell-data">30
+                        <td class="person__data">30
                         </td>
-                        <td class="cell-data">87
+                        <td class="person__data">87
                         </td>
-                        <td class="cell-data">970
+                        <td class="person__data">970
                         </td>
                     </tr>
-                    <tr class="person">
-                        <td>
-                            <div class="person-info">
-                                <div class="photo">
-                                    <img src="img/robert.jpeg" alt="Robert">
-                                </div>
-                                <div class="name-follow">
-                                    <div class="name-wrapper">
-                                        <span class='name'>Robert Baratheon</span>
-                                        <input type="checkbox" class='follow-checkbox' id="robert">
-                                        <label for="robert"></label>
-                                    </div>
-                                    <div class='rating'> 521</div>
-                                </div>
-                            </div>
+                    <tr class="person__item">
+                        <td class="person__info">
+                            <img class="person__photo" src="img/robert.jpeg" alt="Robert">
+                            <span class="person__name">Robert Baratheon</span>
+                            <input type="checkbox" class="person__follow-checkbox" id="robert">
+                            <label for="robert"></label>
+                            <div class="person__rating"> 521</div>
                         </td>
-                        <td class="cell-data">6
+                        <td class="person__data">6
                         </td>
-                        <td class="cell-data">15
+                        <td class="person__data">15
                         </td>
-                        <td class="cell-data">521
+                        <td class="person__data">521
                         </td>
                     </tr>
-                    <tr class="person">
-                        <td>
-                            <div class="person-info">
-                                <div class="photo">
-                                    <img src="img/Cersei.jpeg" alt="Cersei">
-                                </div>
-                                <div class="name-follow">
-                                    <div class="name-wrapper">
-                                        <span class='name'>Cersei Lannister</span>
-                                        <input type="checkbox" class='follow-checkbox' id="cercei">
-                                        <label for="cercei"></label>
-                                    </div>
-                                    <div class='rating'> 626</div>
-                                </div>
-                            </div>
+                    <tr class="person__item">
+                        <td class="person__info">
+                            <img class="person__photo" src="img/Cersei.jpeg" alt="Cersei">
+                            <span class="person__name">Cersei Lannister</span>
+                            <input type="checkbox" class="person__follow-checkbox" id="cercei">
+                            <label for="cercei"></label>
+                            <div class="person__rating"> 626</div>
                         </td>
-                        <td class="cell-data">49
+                        <td class="person__data">49
                         </td>
-                        <td class="cell-data">56
+                        <td class="person__data">56
                         </td>
-                        <td class="cell-data">626
+                        <td class="person__data">626
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <div id="show-more">
-                <span>Show more</span>
+            <div id="person__show-more">
+                Show more
             </div>
         </div>
-    </div>
+    </section>
+    <footer class = "footer"></footer>
 </body>
 
 </html>
