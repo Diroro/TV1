@@ -10,23 +10,40 @@
 html,body{
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
 }
 body {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
     background-color:#F7F9FA;
     font-family: Helvetica, Arial,sans-serif;
 }
-#person__wrapper {
+.header{
+    width: 100%;
+    height: 20px;
+}
+.footer {
+  height:20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.person__wrapper {
 	width:1000px;
-	margin:auto
+    margin:auto;
+    padding-bottom: 20px;
 } 
-#person__header{
+.person__caption{
     float:left;
     line-height: 40px;
     vertical-align: middle;
 	font-weight:700;
 	color:#4C5151
 }
-#person__header::before{
+.person__caption::before{
     content:"\f100";
 	font-family:Flaticon;
 	font-size:23px;
@@ -37,7 +54,7 @@ body {
 	background:transparent;
 	margin-right: 5px
 }
-#person__table {
+.person__table {
 	border-collapse:collapse;
 	border-right:1px solid #D2D4D5;
 	border-top:1px solid #D2D4D5;
@@ -45,7 +62,7 @@ body {
     width: 980px;
     margin:auto;
 }
-th {
+.person__header {
 	height:30px;
 	background-color:#ECF0F3;
 	color:#4C5151;
@@ -55,10 +72,10 @@ th {
 	height:30px;
 	font-weight:500
 }
-tr:nth-child(even) {
+.person__item:nth-child(even) {
 	background-color:#FBFBFB
 }
-td,th {
+.person__info, .person__item, .person__header{
 	border-bottom:1px solid #D2D4D5
 }
 .person__info {
@@ -96,7 +113,7 @@ td,th {
 	font-weight:600;
 	color:#4C5151
 }
-#person__show-more {
+.person__show-more {
 	border:1px solid #D2D4D5;
 	border-top:1px dashed #D2D4D5;
 	width:200px;
@@ -108,7 +125,7 @@ td,th {
 	font-weight:700;
 	color:#4C5151
 }
-#person__show-more, #person__header{
+.person__show-more, .person__caption{
     text-transform: uppercase;
 }
 .person__follow-checkbox {
@@ -149,5 +166,3 @@ td,th {
 	background:#ff4b3a;
 	color:#fff
 } 
-
-
